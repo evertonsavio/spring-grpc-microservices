@@ -4,6 +4,7 @@ dev/evertonsavio/app/models/BalanceCheckRequest.class
 dev/evertonsavio/app/models/BankServiceGrpc$BankServiceFutureStub.class
 dev/evertonsavio/app/models/BalanceCheckRequest$Builder.class
 dev/evertonsavio/app/models/BalanceCheckRequestOrBuilder.class
+dev/evertonsavio/app/GrpcServer.class
 dev/evertonsavio/app/models/Balance$Builder.class
 dev/evertonsavio/app/models/BankServiceGrpc$BankServiceBaseDescriptorSupplier.class
 dev/evertonsavio/app/models/BankServiceGrpc$MethodHandlers.class
