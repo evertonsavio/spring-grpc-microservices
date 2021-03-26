@@ -9,5 +9,8 @@
         <module name="grpc-intro" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="grpc-intro" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
