@@ -1,3 +1,4 @@
+dev/evertonsavio/app/services/BankService.class
 dev/evertonsavio/app/models/BankServiceGrpc$BankServiceImplBase.class
 dev/evertonsavio/app/models/BalanceCheckRequest.class
 dev/evertonsavio/app/models/BankServiceGrpc$BankServiceFutureStub.class
