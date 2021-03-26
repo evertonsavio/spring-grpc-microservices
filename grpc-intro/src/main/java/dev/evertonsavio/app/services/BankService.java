@@ -1,5 +1,6 @@
 package dev.evertonsavio.app.services;
 
+import dev.evertonsavio.app.data.AccountDatabase;
 import dev.evertonsavio.app.models.Balance;
 import dev.evertonsavio.app.models.BalanceCheckRequest;
 import dev.evertonsavio.app.models.BankServiceGrpc;
@@ -13,7 +14,7 @@ public class BankService extends BankServiceGrpc.BankServiceImplBase {
         int accountNumber = request.getAccountNumber();
 
         Balance balance = Balance.newBuilder()
-                .setAmount(accountNumber * 10)
+                .setAmount(AccountDatabase.getBalance(accountNumber))
                 .build();
 
         responseObserver.onNext(balance);
