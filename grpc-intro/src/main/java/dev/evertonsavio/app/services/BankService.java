@@ -2,6 +2,7 @@ package dev.evertonsavio.app.services;
 
 import dev.evertonsavio.app.data.AccountDatabase;
 import dev.evertonsavio.app.models.*;
+import io.grpc.Status;
 import io.grpc.stub.StreamObserver;
 
 public class BankService extends BankServiceGrpc.BankServiceImplBase {
@@ -26,16 +27,17 @@ public class BankService extends BankServiceGrpc.BankServiceImplBase {
         int amount = request.getAmount(); //10, 20, 30..
         int balance = AccountDatabase.getBalance(accountNumber);
 
+        if(balance < amount){
+            Status status = Status.FAILED_PRECONDITION.withDescription("No enough modey: " + balance);
+            responseObserver.onError(status.asRuntimeException());
+            return;
+        }
+
         //JUST TO CREATE STREAM REQUEST
         for (int i = 0; i < amount/10; i++) {
             Money money = Money.newBuilder().setValue(10).build();
             responseObserver.onNext(money);
             AccountDatabase.deductBalance(accountNumber, 10);
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
         }
         responseObserver.onCompleted();
     }
