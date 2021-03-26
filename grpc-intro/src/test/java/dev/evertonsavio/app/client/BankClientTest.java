@@ -3,6 +3,7 @@ package dev.evertonsavio.app.client;
 import dev.evertonsavio.app.models.Balance;
 import dev.evertonsavio.app.models.BalanceCheckRequest;
 import dev.evertonsavio.app.models.BankServiceGrpc;
+import dev.evertonsavio.app.models.WithdrawRequest;
 import dev.evertonsavio.app.services.BankService;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
@@ -35,5 +36,11 @@ public class BankClientTest {
         System.out.println("Received: " + balance.getAmount());
     }
 
+    @Test
+    public void withdrawTest(){
+        WithdrawRequest withdrawRequest = WithdrawRequest.newBuilder().setAccountNumber(7).setAmount(40).build();
+        this.blockingStub.withdraw(withdrawRequest)
+                .forEachRemaining(money -> System.out.println("Received: " + money.getValue()));
+    }
 
 }
