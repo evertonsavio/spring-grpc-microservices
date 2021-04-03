@@ -34,6 +34,11 @@ public final class BankServiceOuterClass {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_Money_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_DepositRequest_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_DepositRequest_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -47,10 +52,13 @@ public final class BankServiceOuterClass {
       "est\022\026\n\016account_number\030\001 \001(\005\"\031\n\007Balance\022\016" +
       "\n\006amount\030\001 \001(\005\"9\n\017WithdrawRequest\022\026\n\016acc" +
       "ount_number\030\001 \001(\005\022\016\n\006amount\030\002 \001(\005\"\026\n\005Mon" +
-      "ey\022\r\n\005value\030\001 \001(\0052c\n\013BankService\022,\n\ngetB" +
-      "alance\022\024.BalanceCheckRequest\032\010.Balance\022&" +
-      "\n\010withdraw\022\020.WithdrawRequest\032\006.Money0\001B\037" +
-      "\n\033dev.evertonsavio.app.modelsP\001b\006proto3"
+      "ey\022\r\n\005value\030\001 \001(\005\"8\n\016DepositRequest\022\026\n\016a" +
+      "ccount_number\030\001 \001(\005\022\016\n\006amount\030\002 \001(\0052\217\001\n\013" +
+      "BankService\022,\n\ngetBalance\022\024.BalanceCheck" +
+      "Request\032\010.Balance\022&\n\010withdraw\022\020.Withdraw" +
+      "Request\032\006.Money0\001\022*\n\013cashDeposit\022\017.Depos" +
+      "itRequest\032\010.Balance(\001B\037\n\033dev.evertonsavi" +
+      "o.app.modelsP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -88,6 +96,12 @@ public final class BankServiceOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_Money_descriptor,
         new java.lang.String[] { "Value", });
+    internal_static_DepositRequest_descriptor =
+      getDescriptor().getMessageTypes().get(4);
+    internal_static_DepositRequest_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_DepositRequest_descriptor,
+        new java.lang.String[] { "AccountNumber", "Amount", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

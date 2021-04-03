@@ -1,13 +1,11 @@
 package dev.evertonsavio.app.client;
 
 import com.google.common.util.concurrent.Uninterruptibles;
-import dev.evertonsavio.app.models.Balance;
-import dev.evertonsavio.app.models.BalanceCheckRequest;
-import dev.evertonsavio.app.models.BankServiceGrpc;
-import dev.evertonsavio.app.models.WithdrawRequest;
+import dev.evertonsavio.app.models.*;
 import dev.evertonsavio.app.services.BankService;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
+import io.grpc.stub.StreamObserver;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
@@ -56,6 +54,19 @@ public class BankClientTest {
         this.bankServiceStub.withdraw(withdrawRequest, new MoneyStramingResponse(latch));
         latch.await();
         //Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
+    }
+
+    @Test
+    public void cashStreamingRequest() throws InterruptedException {
+        CountDownLatch latch = new CountDownLatch(1);
+        StreamObserver<DepositRequest> streamObserver = this.bankServiceStub
+                .cashDeposit(new BalanceStreamObserver(latch));
+        for (int i = 0; i < 10; i++) {
+            DepositRequest depositRequest = DepositRequest.newBuilder().setAccountNumber(8).setAmount(10).build();
+            streamObserver.onNext(depositRequest);
+        }
+        streamObserver.onCompleted();
+        latch.await();
     }
 
 }
