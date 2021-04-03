@@ -1,6 +1,7 @@
 package dev.evertonsavio.app;
 
 import dev.evertonsavio.app.services.BankService;
+import dev.evertonsavio.app.services.TransferService;
 import io.grpc.Server;
 import io.grpc.ServerBuilder;
 
@@ -14,6 +15,7 @@ public class GrpcServer {
 
         Server server = ServerBuilder.forPort(port)
                 .addService(new BankService())
+                .addService(new TransferService())
                 .build();
 
         server.start();
