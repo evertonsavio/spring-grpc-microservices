@@ -24,6 +24,7 @@ public class DeadlineClientTest {
     @BeforeAll
     public void setup(){
         ManagedChannel managedChannel = ManagedChannelBuilder.forAddress("localhost", 6565)
+                .intercept(new DeadlineInterceptor())//Global deadline interceptor
                 .usePlaintext()
                 .build();
 
@@ -39,7 +40,7 @@ public class DeadlineClientTest {
                 .build();
         try {
             Balance balance = this.blockingStub
-                    .withDeadline(Deadline.after(2, TimeUnit.SECONDS))
+                    //.withDeadline(Deadline.after(2, TimeUnit.SECONDS))
                     .getBalance(balanceCheckRequest);
             System.out.println("Received: " + balance.getAmount());
         }
@@ -56,7 +57,7 @@ public class DeadlineClientTest {
                 .setAmount(40).build();
         try {
             this.blockingStub
-                    .withDeadline(Deadline.after(4, TimeUnit.SECONDS))
+                    .withDeadline(Deadline.after(2, TimeUnit.SECONDS))
                     .withdraw(withdrawRequest)
                     .forEachRemaining(money -> System.out.println("Received: " + money.getValue()));
         } catch (StatusRuntimeException e) {
