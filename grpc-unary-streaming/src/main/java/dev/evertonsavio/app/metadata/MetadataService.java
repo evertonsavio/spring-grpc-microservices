@@ -22,7 +22,7 @@ public class MetadataService extends BankServiceGrpc.BankServiceImplBase {
                 .build();
 
         //simulate time consuming request
-        Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
+        //Uninterruptibles.sleepUninterruptibly(3, TimeUnit.SECONDS);
 
         responseObserver.onNext(balance);
         responseObserver.onCompleted();
