@@ -2,7 +2,6 @@ package dev.evertonsavio.app.loadbalancing;
 
 import dev.evertonsavio.app.models.*;
 import dev.evertonsavio.app.rpctypes.data.AccountDatabase;
-import dev.evertonsavio.app.rpctypes.services.CashStreamingRequest;
 import io.grpc.Status;
 import io.grpc.stub.StreamObserver;
 
