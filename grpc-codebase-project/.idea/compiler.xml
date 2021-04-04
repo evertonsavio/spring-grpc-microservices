@@ -6,13 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="grpc-codebase-project" />
-        <module name="grpc-unary-streaming" />
+        <module name="grpc-load-balancing" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="grpc-codebase-project" target="11" />
-      <module name="grpc-unary-streaming" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>

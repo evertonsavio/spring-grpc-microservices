@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/gRPC_Microservices.iml" filepath="$PROJECT_DIR$/.idea/gRPC_Microservices.iml" />
-      <module fileurl="file://$PROJECT_DIR$/grpc-intro/grpc-intro.iml" filepath="$PROJECT_DIR$/grpc-intro/grpc-intro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc-codebase-project/grpc-codebase-project.iml" filepath="$PROJECT_DIR$/grpc-codebase-project/grpc-codebase-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grpc-unary-streaming/grpc-unary-streaming.iml" filepath="$PROJECT_DIR$/grpc-unary-streaming/grpc-unary-streaming.iml" />
     </modules>
   </component>
 </project>
