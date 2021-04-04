@@ -1,6 +1,10 @@
 package dev.evertonsavio.app.client.rpctypes;
 
+import dev.evertonsavio.app.client.metadata.ClientConstants;
 import dev.evertonsavio.app.models.Money;
+import dev.evertonsavio.app.models.WithdrawError;
+import io.grpc.Metadata;
+import io.grpc.Status;
 import io.grpc.stub.StreamObserver;
 
 import java.util.concurrent.CountDownLatch;
@@ -20,7 +24,12 @@ public class MoneyStramingResponse implements StreamObserver<Money>{
 
     @Override
     public void onError(Throwable throwable) {
-        System.out.println(throwable.getMessage());
+
+        Status status = Status.fromThrowable(throwable);
+        Metadata metadata = Status.trailersFromThrowable(throwable);
+        WithdrawError withdrawError = metadata.get(ClientConstants.WITHDRAW_ERROR_KEY);
+        System.out.println(withdrawError);
+        //System.out.println(throwable.getMessage());
         latch.countDown();
     }
 

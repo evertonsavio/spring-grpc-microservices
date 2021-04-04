@@ -12,7 +12,7 @@ public class GrpcServer {
         int port = 6565;
 
         Server server = ServerBuilder.forPort(port)
-                .intercept(new AuthInterceptor())
+                //.intercept(new AuthInterceptor())
                 .addService(new MetadataService())
                 .build();
 

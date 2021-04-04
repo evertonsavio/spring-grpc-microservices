@@ -7,12 +7,14 @@ dev/evertonsavio/app/models/BankServiceOuterClass.class
 dev/evertonsavio/app/models/TransferResponse.class
 dev/evertonsavio/app/models/TransferRequestOrBuilder.class
 dev/evertonsavio/app/models/TransferServiceOuterClass$1.class
+dev/evertonsavio/app/models/WithdrawError.class
 dev/evertonsavio/app/models/TransferServiceGrpc$TransferServiceFileDescriptorSupplier.class
 dev/evertonsavio/app/models/TransferServiceGrpc$TransferServiceStub.class
 dev/evertonsavio/app/models/DepositRequest$Builder.class
 dev/evertonsavio/app/models/MoneyOrBuilder.class
 dev/evertonsavio/app/models/WithdrawRequestOrBuilder.class
 dev/evertonsavio/app/models/BankServiceGrpc$MethodHandlers.class
+dev/evertonsavio/app/models/WithdrawError$1.class
 dev/evertonsavio/app/models/AccountOrBuilder.class
 dev/evertonsavio/app/models/TransferServiceGrpc$TransferServiceBaseDescriptorSupplier.class
 dev/evertonsavio/app/models/TransferServiceGrpc$TransferServiceImplBase.class
@@ -22,13 +24,15 @@ dev/evertonsavio/app/models/TransferServiceGrpc$MethodHandlers.class
 dev/evertonsavio/app/models/BankServiceGrpc$BankServiceStub.class
 dev/evertonsavio/app/models/DepositRequest$1.class
 dev/evertonsavio/app/models/Balance.class
-dev/evertonsavio/app/services/BankService.class
+dev/evertonsavio/app/models/ErrorMessage.class
 dev/evertonsavio/app/models/TransferResponseOrBuilder.class
 dev/evertonsavio/app/models/TransferRequest.class
+dev/evertonsavio/app/models/WithdrawError$Builder.class
 dev/evertonsavio/app/models/Account.class
 dev/evertonsavio/app/models/WithdrawRequest$1.class
 dev/evertonsavio/app/models/BalanceCheckRequestOrBuilder.class
 dev/evertonsavio/app/models/TransferRequest$1.class
+dev/evertonsavio/app/models/ErrorMessage$1.class
 dev/evertonsavio/app/models/DepositRequestOrBuilder.class
 dev/evertonsavio/app/models/Balance$1.class
 dev/evertonsavio/app/models/Money.class
@@ -36,6 +40,7 @@ dev/evertonsavio/app/models/BankServiceGrpc.class
 dev/evertonsavio/app/models/Money$Builder.class
 dev/evertonsavio/app/models/BankServiceGrpc$BankServiceFileDescriptorSupplier.class
 dev/evertonsavio/app/models/TransferServiceGrpc$TransferServiceBlockingStub.class
+dev/evertonsavio/app/models/WithdrawErrorOrBuilder.class
 dev/evertonsavio/app/models/Account$1.class
 dev/evertonsavio/app/models/BankServiceGrpc$BankServiceMethodDescriptorSupplier.class
 dev/evertonsavio/app/models/WithdrawRequest$Builder.class
@@ -44,7 +49,6 @@ dev/evertonsavio/app/models/BankServiceGrpc$BankServiceFutureStub.class
 dev/evertonsavio/app/models/BalanceCheckRequest.class
 dev/evertonsavio/app/models/BalanceCheckRequest$Builder.class
 dev/evertonsavio/app/models/TransferStatus.class
-dev/evertonsavio/app/GrpcServer.class
 dev/evertonsavio/app/models/TransferServiceGrpc$TransferServiceFutureStub.class
 dev/evertonsavio/app/models/DepositRequest.class
 dev/evertonsavio/app/models/BankServiceOuterClass$1.class

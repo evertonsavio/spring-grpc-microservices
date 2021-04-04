@@ -1,9 +1,12 @@
 package dev.evertonsavio.app.client.metadata;
 
+import dev.evertonsavio.app.models.WithdrawError;
 import io.grpc.Metadata;
+import io.grpc.protobuf.ProtoUtils;
 
 public class ClientConstants {
 
+    public static final Metadata.Key<WithdrawError> WITHDRAW_ERROR_KEY = ProtoUtils.keyForProto(WithdrawError.getDefaultInstance());
     public static final Metadata.Key<String> USER_TOKEN = Metadata.Key.of("user-token", Metadata.ASCII_STRING_MARSHALLER);
     public static final Metadata METADATA =  new Metadata();
 

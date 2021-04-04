@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/grpc-intro/pom.xml" />
         <option value="$PROJECT_DIR$/grpc-load-balancing/pom.xml" />
+        <option value="$PROJECT_DIR$/grpc-unary-streaming/pom.xml" />
       </list>
     </option>
   </component>
