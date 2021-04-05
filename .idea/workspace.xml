@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b17339f8-ee97-4d49-ad37-92b84cc07e6e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1qItQVXwNRt4hSBep0XufWpgpnv" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="JUnit.BankClientTest.withdrawAsyncTest">
+    <configuration name="GrpcServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dev.evertonsavio.app.GrpcServer" />
+      <module name="grpc-intro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.evertonsavio.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankClientTest.withdrawAsyncTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="grpc-intro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.evertonsavio.app.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.evertonsavio.app.client" />
+      <option name="MAIN_CLASS_NAME" value="dev.evertonsavio.app.client.BankClientTest" />
+      <option name="METHOD_NAME" value="withdrawAsyncTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BankClientTest.withdrawTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="grpc-intro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dev.evertonsavio.app.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dev.evertonsavio.app.client" />
+      <option name="MAIN_CLASS_NAME" value="dev.evertonsavio.app.client.BankClientTest" />
+      <option name="METHOD_NAME" value="withdrawTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BankClientTest.withdrawAsyncTest" />
+        <item itemvalue="JUnit.BankClientTest.withdrawTest" />
+        <item itemvalue="Application.GrpcServer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b17339f8-ee97-4d49-ad37-92b84cc07e6e" name="Default Changelist" comment="" />
+      <created>1616778915900</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616778915900</updated>
+    </task>
+    <servers />
+  </component>
+</project>
